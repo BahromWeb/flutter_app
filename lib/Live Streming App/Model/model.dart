@@ -35,7 +35,7 @@ class StreamItems {
 List<StreamItems> streamItems = [
   StreamItems(
     name: 'Randy Rangers',
-    category: '🔥Popular',
+    category: 'Popular',
     url: 'https://symbl-cdn.com/i/webp/ef/717de6be0d2c9eb4d9d91521542da2.webp',
     isLiveNow: true,
     color: Colors.blue,
@@ -53,7 +53,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Aura Kirana',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url: 'https://symbl-cdn.com/i/webp/9c/4628a5e254c186333877e3449d1caf.webp',
     color: Colors.blueAccent,
     image:
@@ -71,7 +71,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Jeniper',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url:
         'https://cdn3.iconfinder.com/data/icons/jobs-and-professions/30/farmer_male-512.png',
     color: Colors.indigoAccent,
@@ -89,7 +89,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Subash Bo',
-    category: '⚽️Sports',
+    category: 'Sports',
     url:
         'https://images.icon-icons.com/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181660.png',
     color: Colors.redAccent,
@@ -107,7 +107,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Snake Snake',
-    category: '⚽️Sports',
+    category: 'Sports',
     url:
         'https://cdn4.iconfinder.com/data/icons/avatars-of-people/5000/avatar_15-512.png',
     color: Colors.pinkAccent,
@@ -125,7 +125,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'My Name Is',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url:
         'https://cdn0.iconfinder.com/data/icons/when-the-sun-goes-down/32/avatar_1-19-512.png',
     color: Colors.deepOrangeAccent,
@@ -143,7 +143,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Harish Sharma',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url: 'https://images.emojiterra.com/twitter/v14.0/1024px/1f468-1f9b0.png',
     color: Colors.brown,
     image:
@@ -160,7 +160,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Mr.A',
-    category: '🎧Music',
+    category: 'Music',
     url: 'https://images.emojiterra.com/twitter/v14.0/1024px/1f468-1f9b1.png',
     color: Colors.indigoAccent,
     image:
@@ -177,7 +177,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Aura Kirana',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url: 'https://symbl-cdn.com/i/webp/ef/717de6be0d2c9eb4d9d91521542da2.webp',
     color: Colors.blueAccent,
     image:
@@ -194,7 +194,7 @@ List<StreamItems> streamItems = [
   ),
   StreamItems(
     name: 'Jeniper',
-    category: '🎮Gaming',
+    category: 'Gaming',
     url: 'https://symbl-cdn.com/i/webp/9c/4628a5e254c186333877e3449d1caf.webp',
     color: Colors.indigoAccent,
     image:
