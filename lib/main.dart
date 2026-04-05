@@ -11,42 +11,12 @@ class MyApp extends StatelessWidget {
   // Root widget of the app
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: StremingAppHomeScreen(),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // for hive database
 // void main() async {
