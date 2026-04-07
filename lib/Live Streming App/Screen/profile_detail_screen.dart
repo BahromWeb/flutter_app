@@ -10,8 +10,9 @@ class ProfileDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: theme.scaffoldBackgroundColor,
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -76,7 +77,7 @@ class ProfileDetailScreen extends StatelessWidget {
                       bottom: -45,
                       left: 15,
                       child: CircleAvatar(
-                        backgroundColor: Colors.black,
+                        backgroundColor: theme.scaffoldBackgroundColor,
                         backgroundImage: NetworkImage(
                           stream.url,
                         ),
@@ -92,16 +93,16 @@ class ProfileDetailScreen extends StatelessWidget {
                         children: [
                           Text(
                             stream.name,
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           Text(
                             "@${stream.name.toLowerCase()}_",
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface,
                               fontWeight: FontWeight.w600,
                             ),
                           )
@@ -135,8 +136,8 @@ class ProfileDetailScreen extends StatelessWidget {
                 const SizedBox(height: 80),
                 Text(
                   stream.description,
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: theme.colorScheme.onSurface,
                     fontWeight: FontWeight.w500,
                   ),
                   textAlign: TextAlign.center,
@@ -150,16 +151,16 @@ class ProfileDetailScreen extends StatelessWidget {
                         children: [
                           Text(
                             stream.post,
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text(
+                          Text(
                             "Post",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: theme.colorScheme.onSurface,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
@@ -170,23 +171,23 @@ class ProfileDetailScreen extends StatelessWidget {
                     Container(
                       height: size.height * 0.06,
                       width: 2,
-                      color: Colors.grey,
+                      color: theme.dividerColor,
                     ),
                     Expanded(
                       child: Column(
                         children: [
                           Text(
                             stream.following,
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text(
+                          Text(
                             "Following",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: theme.colorScheme.onSurface,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
@@ -197,23 +198,23 @@ class ProfileDetailScreen extends StatelessWidget {
                     Container(
                       height: size.height * 0.06,
                       width: 2,
-                      color: Colors.grey,
+                      color: theme.dividerColor,
                     ),
                     Expanded(
                       child: Column(
                         children: [
                           Text(
                             stream.followers,
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text(
+                          Text(
                             "Followers",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: theme.colorScheme.onSurface,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
@@ -224,7 +225,7 @@ class ProfileDetailScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 30),
-                const Wrap(
+                Wrap(
                   spacing: 50,
                   children: [
                     Column(
@@ -232,7 +233,7 @@ class ProfileDetailScreen extends StatelessWidget {
                         Text(
                           "Live Stream",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: theme.colorScheme.onSurface,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -241,7 +242,7 @@ class ProfileDetailScreen extends StatelessWidget {
                           width: 60,
                           child: Divider(
                             thickness: 2,
-                            color: Colors.white,
+                            color: theme.colorScheme.onSurface,
                           ),
                         ),
                       ],
@@ -249,7 +250,7 @@ class ProfileDetailScreen extends StatelessWidget {
                     Text(
                       "Last Live",
                       style: TextStyle(
-                        color: Colors.white60,
+                        color: theme.colorScheme.onSurface.withOpacity(0.6),
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
@@ -257,7 +258,7 @@ class ProfileDetailScreen extends StatelessWidget {
                     Text(
                       "Star",
                       style: TextStyle(
-                        color: Colors.white60,
+                        color: theme.colorScheme.onSurface.withOpacity(0.6),
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
@@ -265,7 +266,7 @@ class ProfileDetailScreen extends StatelessWidget {
                     Text(
                       "Post",
                       style: TextStyle(
-                        color: Colors.white60,
+                        color: theme.colorScheme.onSurface.withOpacity(0.6),
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
